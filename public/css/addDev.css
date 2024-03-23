@@ -1,0 +1,35 @@
+.containerAll {
+
+    display: flex;
+
+}
+
+body {
+
+    background: url('/img/background/vaporwave.gif');
+    background-size: 100%;
+}
+
+a {
+
+    color: white !important;
+    text-shadow: 2px 2px 2px purple;
+    font-weight: 900 !important;
+
+}
+
+.containerContent {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+
+}
+
+.menuStyle {
+
+    background: url('/img/menu/universe.gif');
+    background-position-x: 20%;
+    background-position-y: 20%;
+    border-right: 1px solid white;
+}
