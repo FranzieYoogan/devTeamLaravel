@@ -105,7 +105,8 @@
          
          <div class="containerContent p-4 sm:ml-64">
 
-            <form action="#" class="w-full md:w-1/2 border border-red-500 p-6 bg-gray-900">
+            <form action="/" method="POST" class="w-full md:w-1/2 border border-red-500 p-6 bg-gray-900">
+               @csrf
                <h2 class="text-2xl pb-3 font-semibold">
                 Add Dev
                </h2>
@@ -115,7 +116,7 @@
                    <input 
                        type="text" id="name" name="name" 
                        class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-red-500 focus:outline-none focus:bg-gray-800 focus:text-red-500"
-                       autocomplete="off"
+                       autocomplete="off" required
                    >
                    </div>
 
@@ -124,7 +125,7 @@
                      <input 
                          type="text" id="lastName" name="lastName" 
                          class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-red-500 focus:outline-none focus:bg-gray-800 focus:text-red-500"
-                         autocomplete="off"
+                         autocomplete="off" required
                      >
                      </div>
 
@@ -133,7 +134,7 @@
                         <input 
                             type="text" id="email" name="email" 
                             class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-red-500 focus:outline-none focus:bg-gray-800 focus:text-red-500"
-                            autocomplete="off"
+                            autocomplete="off" required
                         >
                         </div>
 
@@ -142,7 +143,7 @@
                            <input 
                                type="file" id="photo" name="photo" 
                                class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-red-500 focus:outline-none focus:bg-gray-800 focus:text-red-500"
-                               autocomplete="off"
+                               autocomplete="off" required
                            >
                            </div>
 
@@ -150,7 +151,7 @@
                      <div class="flex flex-col mb-3">
                         <label for="devExpertise">Dev Expertise</label>
                         <select
-                            id="devExpertise" name="devExpertise" 
+                            id="devExpertise" name="devExpertise" required
                             class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-red-500 focus:outline-none focus:bg-gray-800 focus:text-red-500">
                             <option selected>Choose Dev's Expertise</option>
                             <option value="front_end">Front-end</option>
