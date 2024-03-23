@@ -105,7 +105,7 @@
          
          <div class="containerContent p-4 sm:ml-64">
 
-            <form action="/" method="POST" class="w-full md:w-1/2 border border-red-500 p-6 bg-gray-900">
+            <form action="/" method="POST" class="w-full md:w-1/2 border border-red-500 p-6 bg-gray-900" enctype="multipart/form-data" >
                @csrf
                <h2 class="text-2xl pb-3 font-semibold">
                 Add Dev
@@ -162,7 +162,7 @@
             
                </div>
                <div class="w-full pt-3">
-                   <button type="submit" class="w-full bg-gray-900 border border-red-500 px-4 py-2 transition duration-50 focus:outline-none font-semibold hover:bg-red-500 hover:text-white text-xl cursor-pointer">
+                   <button type="submit" name="submit" class="w-full bg-gray-900 border border-red-500 px-4 py-2 transition duration-50 focus:outline-none font-semibold hover:bg-red-500 hover:text-white text-xl cursor-pointer">
                    Send
                    </button>
                </div>

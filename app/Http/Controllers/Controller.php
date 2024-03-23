@@ -6,6 +6,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class Controller extends BaseController
 {
@@ -21,7 +23,24 @@ class Controller extends BaseController
 
         $devExpertise = $request->input('devExpertise');
 
+       
+
+
         
+        $photo= $request->file('photo')->store('/img/uploads');
+
+
+        if(isset($_POST['submit'])) {
+
+            DB::table('Dev')->insert(
+                ['devName' => $name, 'devLastName' => $lastName,'devEmail' => $email,'devExpertise' => $devExpertise, 'devPhoto' => $photo]
+                );
+                
+                return view('welcome');
+
+        }
+
+     
 
     }
 

@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post("/",[Controller::class,'storedLoginHome']);
+Route::post("/",[Controller::class,'addDev']);
 
 Route::get('/addDev', function () {
     return view('welcome');
