@@ -22,5 +22,7 @@ Route::post("/",[Controller::class,'addDev']);
 
 Route::get("/frontend",[Controller::class,'showData']);
 
+Route::get("/backend",[Controller::class,'showDataBackend']);
+
 
 

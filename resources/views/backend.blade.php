@@ -11,7 +11,7 @@ href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 <script src="https://cdn.tailwindcss.com/3.3.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 
-<link rel="stylesheet" href="{{asset('/css/frontend.css')}}">
+<link rel="stylesheet" href="{{asset('/css/backend.css')}}">
 
 
 <!-- Fonts -->
@@ -97,7 +97,7 @@ prev.addEventListener("click", goPrev);
     <section class="w-full containerDevs w-full md:w-1/2 border border-red-500 p-6 bg-gray-900">
         
         <h2 class="text-2xl pb-3 font-semibold">
-        Front-end
+       Back-end
         </h2>
 
   <!-- Component: Carousel with controls inside -->
@@ -107,18 +107,18 @@ prev.addEventListener("click", goPrev);
         <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
             
       
-            @foreach($devs as $key => $data)
-      
-            <li style="position:relative"><img class="imgStyle" src="{{asset('/uploads/' . $data->devPhoto)}}" class="w-full max-w-full max-h-full m-auto" />
+            @foreach($devsBackend as $key => $dataBackend)
+   
+            <li style="position:relative"><img class="imgStyle" src="{{asset('/uploads/' . $dataBackend->devPhoto)}}" class="w-full max-w-full max-h-full m-auto" />
               
-                    <h3 class="devName">{{$data->devName . " " . $data->devLastName}}</h3>
+                    <h3 class="devName">{{$dataBackend->devName . " " . $dataBackend->devLastName}}</h3>
 
                
                
             
             
             </li>
-       
+        
             @endforeach
  
             {{-- <li style="position:relative"><img class="imgStyle" src="{{asset('/uploads/' . $devs[1]->devPhoto)}}"  class="w-full max-w-full max-h-full m-auto" />

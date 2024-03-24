@@ -49,10 +49,22 @@ class Controller extends BaseController
     public function showData() {
 
         $devs = DB::table('Dev')
-            ->select('devName', 'devLastName','devEmail','devPhoto','devExpertise')
+            ->select('devName', 'devLastName','devEmail','devPhoto','devExpertise')->where('devExpertise', 'front_end')
             ->get();
 
             return view('frontend',['devs' => $devs]);
+
+  
+
+    }
+
+    public function showDataBackend() {
+
+        $devsBackend = DB::table('Dev')
+            ->select('devName', 'devLastName','devEmail','devPhoto','devExpertise')->where('devExpertise', 'back_end')
+            ->get();
+
+            return view('backend',['devsBackend' => $devsBackend]);
 
   
 

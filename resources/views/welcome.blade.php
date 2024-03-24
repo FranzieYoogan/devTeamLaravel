@@ -62,7 +62,7 @@
                   </a>
                </li>
                <li>
-                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <a href="/backend" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                      <img class="menuIcon" src="{{asset('img/menu/backend.png')}}" alt="">
                      <span class="flex-1 ms-3 whitespace-nowrap">Backend</span>
                   </a>
