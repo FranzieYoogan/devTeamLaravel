@@ -1,0 +1,50 @@
+body {
+
+    background: url('/img/background/vaporwave.gif');
+    background-size: 150%;
+}
+
+.menuStyle {
+
+    background: url('/img/menu/universe.gif');
+    background-position-x: 20%;
+    background-position-y: 20%;
+    border-right: 1px solid white;
+}
+
+.devName {
+
+    position: absolute;
+    bottom: 0.5em !important;
+    left: 5%;
+    color: white;
+    text-shadow: 2px 2px 2px purple;
+    font-weight: 900;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    padding: 10px;
+}
+
+a {
+
+    color: white !important;
+    text-shadow: 2px 2px 2px purple;
+    font-weight: 900 !important;
+
+}
+
+.containerDevs {
+
+    width: 100% !important;
+    margin-top: 2em;
+    padding-bottom: 30px !important;
+    padding-left: 50px !important;
+}
+
+.imgStyle {
+
+    width: 280px !important;
+    height: 50vh;
+
+}

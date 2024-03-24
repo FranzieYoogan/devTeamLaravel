@@ -27,7 +27,7 @@ class Controller extends BaseController
 
 
         
-        $photo= $request->file('photo')->store('/img/uploads');
+        $photo= $request->file('photo')->store('dev');
 
 
         if(isset($_POST['submit'])) {
@@ -35,12 +35,26 @@ class Controller extends BaseController
             DB::table('Dev')->insert(
                 ['devName' => $name, 'devLastName' => $lastName,'devEmail' => $email,'devExpertise' => $devExpertise, 'devPhoto' => $photo]
                 );
+
+             
                 
                 return view('welcome');
 
         }
 
      
+
+    }
+
+    public function showData() {
+
+        $devs = DB::table('Dev')
+            ->select('devName', 'devLastName','devEmail','devPhoto','devExpertise')
+            ->get();
+
+            return view('frontend',['devs' => $devs]);
+
+  
 
     }
 

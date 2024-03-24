@@ -20,8 +20,7 @@ Route::get('/', function () {
 
 Route::post("/",[Controller::class,'addDev']);
 
-Route::get('/addDev', function () {
-    return view('welcome');
-});
+Route::get("/frontend",[Controller::class,'showData']);
+
 
 
