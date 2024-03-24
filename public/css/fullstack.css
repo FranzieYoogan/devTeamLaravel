@@ -99,7 +99,26 @@ a {
 
     width: 280px !important;
     height: 50vh;
+    border: 1px solid white !important;
+    outline: 2px solid rgb(255, 0, 255);
+    box-shadow: -1px -1px -1px 1px  rgb(255, 0, 255);
+    border-radius: 20px;
+    padding: 3px;
+}
 
+.buttonSlideStyle {
+
+    border: 1px solid white!important;
+    color: white !important;
+    box-shadow: 1px 1px 1px 1px transparent;
+}
+
+.buttonSlideStyle:hover {
+
+    border: 1px solid white!important;
+    color: rgb(255, 0, 255) !important;
+    border: 1px solid transparent !important;
+    box-shadow: 1px 1px 1px 1px rgb(255, 0, 255);
 }
 
 h2 {
