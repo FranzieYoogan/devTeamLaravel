@@ -70,5 +70,45 @@ class Controller extends BaseController
 
     }
 
+    public function showDataFullstack() {
+
+        $devsFullstack = DB::table('Dev')
+            ->select('devName', 'devLastName','devEmail','devPhoto','devExpertise')->where('devExpertise', 'fullstack')
+            ->get();
+
+            if($devsFullstack) {
+
+                return view('fullstack',['devsFullstack' => $devsFullstack]);
+            } else {
+                
+                $none = "none";
+
+ return view('fullstack',['devsFullstack' => $none]);
+            }
+
+
+
+    }
+
+    public function showDataDataScience() {
+
+        $devsDataScience = DB::table('Dev')
+            ->select('devName', 'devLastName','devEmail','devPhoto','devExpertise')->where('devExpertise', 'data_science')
+            ->get();
+
+            if($devsDataScience) {
+
+                return view('DataScience',['devsDataScience' => $devsDataScience]);
+            } else {
+                
+                $none = "none";
+
+ return view('datascience',['devsDataScience' => $none]);
+            }
+
+
+
+    }
+
 
 }

@@ -68,13 +68,13 @@
                   </a>
                </li>
                <li>
-                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <a href="/fullstack" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                      <img class="menuIcon" src="{{asset('img/menu/fullstack.png')}}" alt="">
                      <span class="flex-1 ms-3 whitespace-nowrap">FullStack</span>
                   </a>
                </li>
                <li>
-                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <a href="/datascience" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                      <img class="menuIcon" src="{{asset('img/menu/datascience.png')}}" alt="">
                      <span class="flex-1 ms-3 whitespace-nowrap">Data Science</span>
                   </a>
@@ -142,7 +142,7 @@
                             <option selected>Choose Dev's Expertise</option>
                             <option value="front_end">Front-end</option>
                             <option value="back_end">Back-end</option>
-                            <option value="Dev_ops">DevOps</option>
+                            <option value="fullstack">Fullstack</option>
                             <option value="data_science">Data Science</option>
                      </select>
             

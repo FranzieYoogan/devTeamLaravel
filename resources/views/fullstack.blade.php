@@ -11,7 +11,7 @@ href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 <script src="https://cdn.tailwindcss.com/3.3.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 
-<link rel="stylesheet" href="{{asset('/css/frontend.css')}}">
+<link rel="stylesheet" href="{{asset('/css/fullstack.css')}}">
 
 
 <!-- Fonts -->
@@ -97,29 +97,34 @@ prev.addEventListener("click", goPrev);
     <section class="w-full containerDevs w-full md:w-1/2 border border-red-500 p-6 bg-gray-900">
         
         <h2 class="text-2xl pb-3 font-semibold">
-        Front-end
+     Fullstack
         </h2>
 
   <!-- Component: Carousel with controls inside -->
 <div class="relative w-full glide-01">
     <!-- Slides -->
     <div class="overflow-hidden" data-glide-el="track">
-        <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
-            
-      
-            @foreach($devs as $key => $data)
-      
-            <li style="position:relative"><img class="imgStyle" src="{{asset('/uploads/' . $data->devPhoto)}}" class="w-full max-w-full max-h-full m-auto" />
-              
-                    <h3 class="devName">{{$data->devName . " " . $data->devLastName}}</h3>
-
-               
-               
-            
-            
-            </li>
+        @if($devsFullstack) 
+    <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                
        
-            @endforeach
+                @foreach($devsFullstack as $key => $dataFullstack)
+            
+                <li style="position:relative"><img class="imgStyle" src="{{asset('/uploads/' . $dataFullstack->devPhoto)}}" class="w-full max-w-full max-h-full m-auto" />
+                  
+                        <h3 class="devName">{{$dataFullstack->devName . " " . $dataFullstack->devLastName}}</h3>
+    
+                   
+                   
+                
+                
+                </li>
+            
+                @endforeach
+
+            
+
+         
  
             {{-- <li style="position:relative"><img class="imgStyle" src="{{asset('/uploads/' . $devs[1]->devPhoto)}}"  class="w-full max-w-full max-h-full m-auto" />
             
@@ -130,6 +135,7 @@ prev.addEventListener("click", goPrev);
             <li><img src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-04.jpg" class="w-full max-w-full max-h-full m-auto" /></li>
             <li><img src="https://Tailwindmix.b-cdn.net/carousel/carousel-image-05.jpg" class="w-full max-w-full max-h-full m-auto" /></li> --}}
         </ul>
+ 
     </div>
     <!-- Controls -->
     <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 " data-glide-el="controls">
@@ -146,7 +152,11 @@ prev.addEventListener("click", goPrev);
             </svg>
         </button>
     </div>
+
+
 </div>
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
 
@@ -174,7 +184,10 @@ prev.addEventListener("click", goPrev);
     glide01.mount();
 </script>
   
-    
+@else
+
+<h1>{{$none}}</h1>
+@endif
     
     </section>
 
