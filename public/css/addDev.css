@@ -10,6 +10,12 @@ body {
     background-size: 100%;
 }
 
+.menuIcon {
+
+    width: 30px;
+
+}
+
 a {
 
     color: white !important;
