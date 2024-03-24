@@ -128,7 +128,7 @@
                            <label for="email">Add Dev Photo</label>
                            <input 
                                type="file" id="photo" name="photo" 
-                               class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-red-500 focus:outline-none focus:bg-gray-800 focus:text-red-500"
+                               class="fileStyle px-3 py-2 bg-gray-800 border border-gray-900 focus:border-red-500 focus:outline-none focus:bg-gray-800 focus:text-red-500"
                                autocomplete="off" required
                            >
                            </div>
@@ -138,7 +138,7 @@
                         <label for="devExpertise">Dev Expertise</label>
                         <select
                             id="devExpertise" name="devExpertise" required
-                            class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-red-500 focus:outline-none focus:bg-gray-800 focus:text-red-500">
+                            class="selectStyle px-3 py-2 bg-gray-800 border border-gray-900 focus:border-red-500 focus:outline-none focus:bg-gray-800 focus:text-red-500">
                             <option selected>Choose Dev's Expertise</option>
                             <option value="front_end">Front-end</option>
                             <option value="back_end">Back-end</option>

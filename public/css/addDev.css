@@ -78,3 +78,52 @@ h2 {
     background-position-y: 20%;
     border-right: 1px solid white;
 }
+
+label {
+
+    color: white;
+    font-weight: 900;
+
+}
+
+.fileStyle {
+
+    color: red !important;
+
+}
+
+.selectStyle {
+
+    color: gray;
+
+}
+
+input[type="file"] {
+   color: gray !important;
+  }
+  
+  input[type=file]::file-selector-button {
+    color: gray;
+    border-right: 0.3px solid transparent;   
+    margin-left: 0.3em;
+    padding: 5px;
+   
+  }
+
+  input[type=file]::file-selector-button:hover {
+   border-right: 0.3px solid red;    
+   background-color: rgb(213, 213, 213);
+  }
+
+  input[type=file]::file-selector-button:active {
+    border-right: 0.3px solid red;    
+    background-color: transparent;
+   }
+
+   input[type=file]::file-selector-button:focus {
+    border-right: 0.3px solid red;    
+    background-color: transparent;
+   }
+
+
+
