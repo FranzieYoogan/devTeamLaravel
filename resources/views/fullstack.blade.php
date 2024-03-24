@@ -96,8 +96,8 @@ prev.addEventListener("click", goPrev);
     
     <section class="w-full containerDevs w-full md:w-1/2 border border-red-500 p-6 bg-gray-900">
         
-        <h2 class="text-2xl pb-3 font-semibold">
-     Fullstack
+        <h2  class="text-2xl pb-3 font-semibold">
+    FULLSTACK <img style="display: inline"  class="menuIconTitle" src="{{asset('img/menu/fullstack.png')}}" alt="">
         </h2>
 
   <!-- Component: Carousel with controls inside -->

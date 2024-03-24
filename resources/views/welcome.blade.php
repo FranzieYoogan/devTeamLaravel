@@ -94,7 +94,7 @@
             <form action="/" method="POST" class="w-full md:w-1/2 border border-red-500 p-6 bg-gray-900" enctype="multipart/form-data" >
                @csrf
                <h2 class="text-2xl pb-3 font-semibold">
-                Add Dev
+                Add Dev  <img style="display: inline"  class="menuIconTitle" src="{{asset('img/menu/add.png')}}" alt="">
                </h2>
                <div>
                    <div class="flex flex-col mb-3">

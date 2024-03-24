@@ -32,6 +32,37 @@ body {
 
 }
 
+.menuIconTitle {
+    width: 40px;
+    position: relative;
+    left: 1%;
+    bottom: 5px;
+    transform:
+    rotateX(51deg)
+    rotateZ(43deg);
+  transform-style: preserve-3d;
+
+  box-shadow:
+    1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition:
+    .4s ease-in-out transform,
+    .4s ease-in-out box-shadow;
+
+  &:hover {
+    transform:
+      translate3d(0px, -16px, 0px)
+      rotateX(51deg)
+      rotateZ(43deg);
+    box-shadow:
+      1px 1px 0 1px #f9f9fb,
+      -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+      54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+  }
+
+}
+
 .devNameSpan {
     position: absolute;
     font-size: 10px !important;    
@@ -46,6 +77,13 @@ a {
 
 }
 
+h2 {
+
+    color: white;
+    font-weight: 900 !important;
+    text-shadow: 2px 2px 2px purple;
+
+}
 
 .containerContent {
 
