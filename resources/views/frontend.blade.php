@@ -120,7 +120,9 @@ prev.addEventListener("click", goPrev);
     <div class="overflow-hidden" data-glide-el="track">
         <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
             
+      
             @foreach($devs as $key => $data)
+            @if($data->devExpertise == "front_end")
             <li style="position:relative"><img class="imgStyle" src="{{asset('/uploads/' . $data->devPhoto)}}" class="w-full max-w-full max-h-full m-auto" />
               
                     <h3 class="devName">{{$data->devName . " " . $data->devLastName}}</h3>
@@ -130,7 +132,9 @@ prev.addEventListener("click", goPrev);
             
             
             </li>
+            @endif
             @endforeach
+ 
             {{-- <li style="position:relative"><img class="imgStyle" src="{{asset('/uploads/' . $devs[1]->devPhoto)}}"  class="w-full max-w-full max-h-full m-auto" />
             
                 <h3 class="devName">{{$devs[0]->devName . " " . $devs[0]->devLastName}}</h3>
