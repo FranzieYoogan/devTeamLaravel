@@ -116,15 +116,16 @@ h2 {
 
 .buttonSlideStyle {
 
-    border: 1px solid white!important;
+    border: 1px solid white !important;
     color: white !important;
-    box-shadow: 1px 1px 1px 1px transparent;
+    box-shadow: 1px 1px 1px 1px transparent !important;
+    z-index: 900 !important;
 }
 
-.buttonSlideStyle:hover {
+.buttonSlideStyle:hover{
 
-    border: 1px solid white!important;
+    border: 1px solid white !important;
     color: rgb(255, 0, 255) !important;
     border: 1px solid transparent !important;
-    box-shadow: 1px 1px 1px 1px rgb(255, 0, 255);
+    box-shadow: 1px 1px 1px 1px rgb(255, 0, 255) !important;
 }
