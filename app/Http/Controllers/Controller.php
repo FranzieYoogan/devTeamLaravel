@@ -110,5 +110,26 @@ class Controller extends BaseController
 
     }
 
+    public function showDataSearch(Request $request) {
+
+        $search = $request->input('search');
+
+        if($search) {
+
+            $showDev = DB::table('Dev')
+            ->select('devID','devName', 'devLastName','devEmail','devPhoto','devExpertise')->where('devExpertise', $search)
+            ->get();
+
+            return view('deletedev',['showDev' => $showDev]);
+
+    
+        } else {
+
+            return view('deletedev');
+        }
+
+
+    }
+
 
 }

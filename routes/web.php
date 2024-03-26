@@ -27,3 +27,6 @@ Route::get("/backend",[Controller::class,'showDataBackend']);
 Route::get("/fullstack",[Controller::class,'showDataFullstack']);
 
 Route::get("/datascience",[Controller::class,'showDataDataScience']);
+
+
+Route::get("/deletedev",[Controller::class,'showDataSearch']);

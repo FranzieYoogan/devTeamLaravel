@@ -1,0 +1,29 @@
+.tableContainer {
+
+    margin-top: 2em;
+ 
+
+}
+
+.tBodyStyle {
+
+   
+}
+
+.tableStyle {
+
+    background-color: transparent !important;
+    padding: 10px;
+}
+
+.tHeadStyle {
+
+    background-color: transparent !important;
+    border-bottom: 1px solid white;
+    border-radius: 90px !important;
+    padding: 5px !important;
+    color: white !important;
+    text-shadow: 2px 2px 2px purple;
+    font-weight: 900 !important;
+    
+}

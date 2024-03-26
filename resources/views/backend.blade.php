@@ -62,7 +62,7 @@ href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
              </a>
           </li>
           <li>
-             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+             <a href="/deletedev" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                 <img class="menuIcon" src="{{asset('img/menu/delete.png')}}" alt="">
                 <span class="flex-1 ms-3 whitespace-nowrap">Delete Dev</span>
              </a>
