@@ -170,7 +170,7 @@
                     {{strtoupper($data->devExpertise) }}
                 </td>
                 <td style="color:white; font-weight:900" class="">
-                    <a href="#" style="position: relative;" class="deletePng">
+                    <a href="{{url('delete/' . $data->devID)}}" style="position: relative;" class="deletePng">
                         <img class="deletePng" src="{{asset('img/menu/delete.png')}}" alt=""></a>
                 </td>
             </tr>

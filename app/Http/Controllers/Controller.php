@@ -131,5 +131,12 @@ class Controller extends BaseController
 
     }
 
+    public function deleteDev($devID) {
+
+           DB::table('Dev')->where('devID',$devID)->delete();
+            return redirect('/deletedev');
+
+    }
+
 
 }

@@ -30,3 +30,5 @@ Route::get("/datascience",[Controller::class,'showDataDataScience']);
 
 
 Route::get("/deletedev",[Controller::class,'showDataSearch']);
+
+Route::get("/delete/{devID}",[Controller::class,'deleteDev']);
