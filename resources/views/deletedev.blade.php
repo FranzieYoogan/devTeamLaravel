@@ -94,7 +94,7 @@
             <form action="/deletedev" method="GET" class="w-full md:w-1/2 border border-red-500 p-6 bg-gray-900" enctype="multipart/form-data" >
              @csrf
                <h2 class="text-2xl pb-3 font-semibold">
-                Delete Dev  <img style="display: inline"  class="menuIconTitle" src="{{asset('img/menu/add.png')}}" alt="">
+                Delete Dev  <img style="display: inline"  class="menuIconTitle" src="{{asset('img/menu/delete.png')}}" alt="">
                </h2>
           
 
