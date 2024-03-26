@@ -29,10 +29,7 @@
 
         <link rel="stylesheet" href="{{asset('/css/addDev.css')}}">
       
-        <style>
-
-         
-        </style>
+    
  
     </head>
     <body class="antialiased">

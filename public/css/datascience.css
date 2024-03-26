@@ -16,7 +16,7 @@ body {
 
     position: absolute;
     bottom: 0.5em !important;
-    left: 5%;
+    left: 8%;
     color: white;
     text-shadow: 2px 2px 2px #800080;
     font-weight: 900;
@@ -25,6 +25,23 @@ body {
     background-color: black;
     padding: 10px;
 }
+
+
+@media only screen and (min-width: 554px) {
+    .devName {
+
+        position: absolute;
+        bottom: 0.5em !important;
+        left: 20%;
+        color: white;
+        text-shadow: 2px 2px 2px #800080;
+        font-weight: 900;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: black;
+        padding: 10px;
+    }
+  }
 
 .menuIcon {
 
@@ -77,6 +94,13 @@ a {
 
 }
 
+h2 {
+
+    color: white;
+    font-weight: 900 !important;
+    text-shadow: 2px 2px 2px purple;
+
+}
 
 .containerContent {
 
@@ -91,19 +115,7 @@ a {
 
     width: 100% !important;
     margin-top: 2em;
-    padding-bottom: 30px !important;
-    padding-left: 50px !important;
-}
-
-.imgStyle {
-
-    width: 280px !important;
-    height: 50vh;
-    border: 1px solid white !important;
-    outline: 2px solid rgb(255, 0, 255);
-    box-shadow: -1px -1px -1px 1px  rgb(255, 0, 255);
-    border-radius: 20px;
-    padding: 3px;
+    padding: 50px !important;
 }
 
 .buttonSlideStyle {
@@ -122,17 +134,13 @@ a {
     box-shadow: 1px 1px 1px 1px rgb(255, 0, 255) !important;
 }
 
-.liStyle {
+.imgStyle {
 
-    
-}
-
-
-
-h2 {
-
-    color: white;
-    font-weight: 900 !important;
-    text-shadow: 2px 2px 2px purple;
-
+    width: 280px !important;
+    height: 50vh;
+    border: 1px solid white !important;
+    outline: 2px solid rgb(255, 0, 255);
+    box-shadow: -1px -1px -1px 1px  rgb(255, 0, 255);
+    border-radius: 20px;
+    padding: 3px;
 }

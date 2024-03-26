@@ -16,7 +16,7 @@ body {
 
     position: absolute;
     bottom: 0.5em !important;
-    left: 5%;
+    left: 8%;
     color: white;
     text-shadow: 2px 2px 2px #800080;
     font-weight: 900;
@@ -25,6 +25,23 @@ body {
     background-color: black;
     padding: 10px;
 }
+
+
+@media only screen and (min-width: 554px) {
+    .devName {
+
+        position: absolute;
+        bottom: 0.5em !important;
+        left: 20%;
+        color: white;
+        text-shadow: 2px 2px 2px #800080;
+        font-weight: 900;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: black;
+        padding: 10px;
+    }
+  }
 
 .menuIcon {
 
@@ -98,8 +115,7 @@ h2 {
 
     width: 100% !important;
     margin-top: 2em;
-    padding-bottom: 30px !important;
-    padding-left: 50px !important;
+    padding: 50px !important;
 }
 
 .buttonSlideStyle {

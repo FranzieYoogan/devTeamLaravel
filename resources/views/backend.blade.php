@@ -1,22 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+        <title>Laravel</title>
 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+        <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+  rel="stylesheet" />
 <link
-href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
-rel="stylesheet" />
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 <script src="https://cdn.tailwindcss.com/3.3.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 
-<link rel="stylesheet" href="{{asset('/css/backend.css')}}">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+     
+
+
+        <link rel="stylesheet" href="{{asset('/css/backend.css')}}">
+      
+    
+ 
+    </head>
+    <body class="antialiased">
 
 <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
     <span class="sr-only">Open sidebar</span>
@@ -109,7 +125,7 @@ prev.addEventListener("click", goPrev);
       
             @foreach($devsBackend as $key => $dataBackend)
    
-            <li style="position:relative"><img class="imgStyle" src="{{asset('/uploads/' . $dataBackend->devPhoto)}}" class="w-full max-w-full max-h-full m-auto" />
+            <li style="position: relative;"><img src="{{asset('/uploads/' . $dataBackend->devPhoto)}}" class="imgStyle w-full max-w-full max-h-full m-auto" />
               
                     <h3 class="devName">{{$dataBackend->devName . " " . $dataBackend->devLastName}}</h3>
 
@@ -180,4 +196,7 @@ prev.addEventListener("click", goPrev);
 
 
  </div>
+
+ </html>
  
+    </body>
