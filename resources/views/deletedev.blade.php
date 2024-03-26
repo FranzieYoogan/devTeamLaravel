@@ -122,24 +122,24 @@
         <thead class="tHeadStyle text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
    
             <tr>
-                <th scope="col" class="px-6 py-3">
-                    Dev Name
+                <th scope="col" class="px-6 py-5">
+                    Name
                 </th>
                 <th  scope="col" class="px-6 py-3">
-                   Dev Email
+                   Email
                 </th>
 
                
-                <th  scope="col" class="px-6 py-3">
-                   Dev Id
+                <th  scope="col" class="px-8 py-3">
+                  ID
                 </th>
         
            
                 <th  scope="col" class="px-6 py-3">
-                    Dev Expertise
+                    Expertise
                 </th>
        
-                <th scope="col" class="px-6 py-3">
+                <th scope="col" class="px-4 py-3">
                     <span class="sr-only">Edit</span>
                 </th>
             </tr>
