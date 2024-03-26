@@ -16,7 +16,7 @@ body {
 
     position: absolute;
     bottom: 0.5em !important;
-    left: 8%;
+    left: 10% !important;
     color: white;
     text-shadow: 2px 2px 2px #800080;
     font-weight: 900;
@@ -26,13 +26,29 @@ body {
     padding: 10px;
 }
 
-
-@media only screen and (min-width: 554px) {
+@media only screen and (width: 400px) {
     .devName {
 
         position: absolute;
         bottom: 0.5em !important;
-        left: 20%;
+        left: 5% !important;
+        color: white;
+        text-shadow: 2px 2px 2px #800080;
+        font-weight: 900;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: black;
+        padding: 10px;
+    }
+  }
+
+
+@media only screen and (width: 554px) {
+    .devName {
+
+        position: absolute;
+        bottom: 0.5em !important;
+        left: 20% !important;
         color: white;
         text-shadow: 2px 2px 2px #800080;
         font-weight: 900;
