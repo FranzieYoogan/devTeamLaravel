@@ -169,8 +169,9 @@
                 <td style="color:white; font-weight:900" class="px-6 py-4">
                     {{strtoupper($data->devExpertise) }}
                 </td>
-                <td style="color:white; font-weight:900" class="px-6 py-4 text-right">
-                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                <td style="color:white; font-weight:900" class="">
+                    <a href="#" style="position: relative;" class="deletePng">
+                        <img class="deletePng" src="{{asset('img/menu/delete.png')}}" alt=""></a>
                 </td>
             </tr>
       
